@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Super Shapes</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css" />
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="css/tachyons.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- items-stretch: tells the child elements to stretch the full height-->
+    <div class="page min-vh-100 flex items-stretch flex-column flex-row-ns overflow-hidden">
+      <!-- Columm One  -->
+      <div class="w-100 flex flex-wrap vh-100">
+        <!-- Conveyor Belt Box -->
+        <div class="h-50 w-100 conveyor-belt overflow-hidden box">
+          <div class="w-200 h-100 conveyor flex items-stretch">
+            <div class="w-25 h-100 bg-red box"></div>
+            <div class="w-25 h-100 bg-purple box"></div>
+            <div class="w-25 h-100 bg-yellow box"></div>
+            <div class="w-25 h-100 bg-blue box"></div>
+            <div class="w-25 h-100 bg-red box"></div>
+            <div class="w-25 h-100 bg-purple box"></div>
+            <div class="w-25 h-100 bg-yellow box"></div>
+            <div class="w-25 h-100 bg-blue"></div>
+          </div>
+        </div>
+
+        <!-- Wave Box -->
+        <div class="h-25 w-100 bg-blue box" id="wave">
+          <svg width="100%" height="100%" viewBox="0 0 988 97" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 26.666c12.488 0 19.222 6.272 33.697 28.743 9.038 14.03 13.416 20.028 20.364 26.5 10.075 9.384 21.77 14.468 35.748 14.468 13.978 0 25.674-5.085 35.75-14.47 6.948-6.47 11.326-12.468 20.364-26.498 14.475-22.471 21.209-28.743 33.697-28.743 12.488 0 19.222 6.272 33.696 28.741 9.04 14.032 13.418 20.03 20.367 26.501 10.076 9.385 21.773 14.469 35.751 14.469 13.979 0 25.676-5.084 35.752-14.468 6.949-6.471 11.328-12.469 20.367-26.498 14.478-22.473 21.213-28.745 33.706-28.745 12.488 0 19.222 6.272 33.696 28.741 9.04 14.032 13.418 20.03 20.367 26.501 10.076 9.385 21.773 14.469 35.751 14.469 13.979 0 25.676-5.084 35.753-14.469 6.948-6.471 11.328-12.469 20.366-26.499 14.477-22.471 21.211-28.743 33.7-28.743 12.491 0 19.226 6.272 33.703 28.743 9.039 14.031 13.418 20.029 20.366 26.5 10.076 9.384 21.773 14.468 35.75 14.468 13.98 0 25.676-5.084 35.752-14.469 6.949-6.471 11.327-12.469 20.366-26.499 14.476-22.471 21.21-28.743 33.7-28.743 12.49 0 19.225 6.272 33.702 28.743 9.04 14.03 13.418 20.028 20.367 26.5 10.076 9.384 21.774 14.468 35.753 14.468 13.978 0 25.675-5.084 35.752-14.468 6.948-6.471 11.327-12.469 20.366-26.498 14.479-22.473 21.214-28.745 33.706-28.745 12.493 0 19.228 6.272 33.705 28.743 9.04 14.031 13.42 20.029 20.368 26.5 10.076 9.384 21.774 14.468 35.752 14.468"
+              stroke="#000"
+              stroke-width="20"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <!-- Rotating Crosses Box -->
+        <div class="h-25 w-100 bg-red box flex flex-wrap pa3" id="crosses">
+          <div class="w-20 h-50 flex items-center justify-center">
+            <svg width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.09 27.09H44V16.91H27.09V0H16.91v16.91H0v10.18h16.91V44h10.18V27.09z"
+                fill="#000"
+                fill-rule="nonzero"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columm Two  -->
+      <div class="w-100 flex flex-wrap vh-100">
+        <!--   Title Box   -->
+        <div class="h-25 w-100 bg-blue box flex justify-center items-center">
+          <div class="w-80">
+            <svg viewBox="0 0 640 55" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.384 54.44c15.984 0 25.704-6.552 25.704-17.712 0-9.072-4.896-13.608-16.704-15.48l-9.792-1.512c-5.184-.936-6.84-1.944-6.84-4.176 0-2.304 2.808-3.6 7.704-3.6 6.336 0 12.744 2.448 16.56 6.336l9.216-10.152C47.04 2.96 38.184.44 28.536.44 13.344.44 4.344 6.488 4.344 16.496c0 9.072 5.544 14.256 16.704 16.128L31.2 34.208c4.536.792 5.904 1.728 5.904 4.032 0 2.736-3.096 4.248-8.928 4.248-6.984 0-13.104-3.024-17.208-7.632L.096 44.576c5.4 5.976 15.768 9.864 27.288 9.864zM58.056 1.88v31.248c0 13.104 9.576 21.312 26.136 21.312 16.488 0 26.064-8.208 26.064-21.24V1.88H93.84v30.024c0 5.976-3.672 9.648-9.648 9.648-6.264 0-9.648-3.672-9.648-9.648V1.88H58.056zm90.288 0c12.6 0 20.52 6.552 20.52 16.92 0 11.088-7.92 17.928-20.592 17.928h-13.104V53h-16.416V1.88h29.592zm-4.464 24.048c4.968 0 7.632-2.232 7.632-6.552 0-4.248-2.592-6.48-7.56-6.48h-8.784v13.032h8.712zm47.016 15.624V32.48h26.064V21.608h-26.064v-8.28h27.288V1.88H174.48V53h44.208V41.552h-27.792zM260.52 53l-9.432-17.856h-7.776V53h-16.416V1.88h29.16c14.76 0 20.952 6.84 20.952 16.416 0 6.12-3.096 11.88-9.936 14.616L278.376 53H260.52zm-17.208-40.32v12.168h8.928c5.184 0 7.488-2.448 7.488-6.264 0-3.672-2.232-5.904-7.488-5.904h-8.928zm84.096 41.76c15.984 0 25.704-6.552 25.704-17.712 0-9.072-4.896-13.608-16.704-15.48l-9.792-1.512c-5.184-.936-6.84-1.944-6.84-4.176 0-2.304 2.808-3.6 7.704-3.6 6.336 0 12.744 2.448 16.56 6.336l9.216-10.152C347.064 2.96 338.208.44 328.56.44c-15.192 0-24.192 6.048-24.192 16.056 0 9.072 5.544 14.256 16.704 16.128l10.152 1.584c4.536.792 5.904 1.728 5.904 4.032 0 2.736-3.096 4.248-8.928 4.248-6.984 0-13.104-3.024-17.208-7.632l-10.872 9.72c5.4 5.976 15.768 9.864 27.288 9.864zM412.08 1.88h-16.488v19.44h-19.8V1.88h-16.416V53h16.416V33.056h19.8V53h16.488V1.88zM461.832 53l-3.528-10.152H438L434.472 53H417.48L438 1.88h20.376L478.824 53h-16.992zm-20.16-20.664h12.96l-3.528-10.152c-1.296-3.6-2.232-6.192-2.88-9.864h-.144c-.576 3.672-1.512 6.264-2.88 9.864l-3.528 10.152zM513.888 1.88c12.6 0 20.52 6.552 20.52 16.92 0 11.088-7.92 17.928-20.592 17.928h-13.104V53h-16.416V1.88h29.592zm-4.464 24.048c4.968 0 7.632-2.232 7.632-6.552 0-4.248-2.592-6.48-7.56-6.48h-8.784v13.032h8.712zm47.016 15.624V32.48h26.064V21.608H556.44v-8.28h27.288V1.88h-43.704V53h44.208V41.552H556.44zm57.024 12.888c15.984 0 25.704-6.552 25.704-17.712 0-9.072-4.896-13.608-16.704-15.48l-9.792-1.512c-5.184-.936-6.84-1.944-6.84-4.176 0-2.304 2.808-3.6 7.704-3.6 6.336 0 12.744 2.448 16.56 6.336l9.216-10.152C633.12 2.96 624.264.44 614.616.44c-15.192 0-24.192 6.048-24.192 16.056 0 9.072 5.544 14.256 16.704 16.128l10.152 1.584c4.536.792 5.904 1.728 5.904 4.032 0 2.736-3.096 4.248-8.928 4.248-6.984 0-13.104-3.024-17.208-7.632l-10.872 9.72c5.4 5.976 15.768 9.864 27.288 9.864z"
+                fill="#000"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!--   Rotating Mini Dots Box   -->
+        <div class="h-25 w-100 bg-red box flex flex-wrap justify-around items-center pa3" id="dots">
+          <div class="w-10">
+            <div class="dot center"></div>
+          </div>
+        </div>
+
+        <!--  Tunnel Box    -->
+        <div class="h-50 w-100 bg-yellow tunnel box" id="tunnel">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 400 400"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <!--   Stroke/stroke-width/fill/etc: if added to the <g> it will apply to the child elements <circle>     -->
+            <g id="Page-1" stroke="#000000" stroke-width="10" fill="none" fill-rule="evenodd">
+              <circle cx="200" cy="200" r="10%"></circle>
+              <circle cx="200" cy="200" r="20%"></circle>
+              <circle cx="200" cy="200" r="30%"></circle>
+              <circle cx="200" cy="200" r="40%"></circle>
+              <circle cx="200" cy="200" r="50%"></circle>
+              <circle cx="200" cy="200" r="60%"></circle>
+              <circle cx="200" cy="200" r="70%"></circle>
+              <circle cx="200" cy="200" r="80%"></circle>
+              <circle cx="200" cy="200" r="90%"></circle>
+              <circle cx="200" cy="200" r="100%"></circle>
+              <circle cx="200" cy="200" r="110%"></circle>
+              <circle cx="200" cy="200" r="120%"></circle>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- Columm Three  -->
+      <div class="w-100 flex flex-wrap vh-100">
+        <!--  ZigZag Box -->
+        <div class="h-50 w-100 bg-purple pa3 box" id="zigzag">
+          <svg width="100%" height="100%" viewBox="0 0 498 495" xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke="#000"
+              stroke-width="10"
+              d="M497.603 4.993L1 24.357l496.603 19.362L1 63.083l496.603 19.366L1 101.814l496.603 19.363L1 140.541l496.603 19.365L1 179.271l496.603 19.367L1 218.004l496.603 19.366L1 256.736l496.603 19.362L1 295.462l496.603 19.368L1 334.194l496.603 19.366L1 372.927l496.603 19.369L1 411.665l496.603 19.369L1 450.404l496.603 19.373L1 489.149"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+
+        <!--   Flashing Boxes   -->
+        <div class="h-25 w-100 flex flex-wrap" id="flashes">
+          <div class="w-50 h-50 bg-blue box flash"></div>
+          <div class="w-50 h-50 bg-red box flash"></div>
+          <div class="w-50 h-50 bg-purple box flash"></div>
+          <div class="w-50 h-50 bg-yellow box flash"></div>
+        </div>
+
+        <!--   Flashing Circles   -->
+        <div
+          class="h-25 w-50 bg-blue box flex flex-wrap justify-around items-center pa3"
+          id="circles"
+        >
+          <div class="w-20">
+            <div class="dot br-100 center"></div>
+          </div>
+        </div>
+
+        <!--  Rotating Squares Box    -->
+        <div class="h-25 w-50 bg-purple box squares" id="squares">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 200 200"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g stroke="#000" stroke-width="10px" fill="none" fillRule="evenodd">
+              <rect height="25%" width="25%" x="50%" y="50%" />
+              <rect height="50%" width="50%" x="50%" y="50%" />
+              <rect height="75%" width="75%" x="50%" y="50%" />
+              <rect height="100%" width="100%" x="50%" y="50%" />
+              <rect height="125%" width="125%" x="50%" y="50%" />
+              <rect height="150%" width="150%" x="50%" y="50%" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!--JS-->
+    <script src="js/anime.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
